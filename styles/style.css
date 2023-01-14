@@ -24,9 +24,9 @@ hr {
   margin-bottom: 30px;
 }
 
-/*--------------------
+/* --------------------
  Top players style 
- ----------------------*/
+ ---------------------- */
 
 .top-players {
   margin-bottom: 30px;
@@ -59,8 +59,8 @@ hr {
  Top blogs styles
  --------------------- */
 
-.top-blogs {
-}
+/* .top-blogs {
+} */
 .blogs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -91,18 +91,18 @@ hr {
   font-size: 16px;
 }
 
-/*--------------------
+/* --------------------
 Lates Course section 
---------------------*/
+-------------------- */
 .courses {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 24px;
 }
-.course {
-  /* width: ;
+ /* .course {
+  width: ;
   border: ;
-  box-shadow: ; */
+  box-shadow: ; 
 }
 .course-banner {
 }
@@ -111,7 +111,7 @@ Lates Course section
 .course-title {
 }
 .course-author {
-}
+}  */
 .course-info {
   display: flex;
   align-items: center;
@@ -133,4 +133,40 @@ Lates Course section
 .course-duration {
   background-color: #ffe4e8;
   border-radius: 10px;
+}
+
+/* ---------------------
+ Media queries
+ ---------------------- */
+
+/* Mobile devices responsive */
+@media only screen and (max-width: 688px) {
+  /* players section responsive */
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    flex-direction: column;
+  }
+  .blog {
+    flex-direction: column;
+  }
+}
+/* Tablet devices responsive */
+@media only screen and (min-width: 687px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player {
+    justify-content: center;
+  }
 }
